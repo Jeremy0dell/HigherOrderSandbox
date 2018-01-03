@@ -25,13 +25,14 @@ class App extends Component {
   }
 
   render() {
+    console.log('log 0')
     const { components } = this.state
 
     return (
       <div>
         <h1>Hello React!</h1>
-        {components}
         <button onClick={this.handleClick}>Click for new dupes!!</button>
+        {components}
       </div>
     )
   }
